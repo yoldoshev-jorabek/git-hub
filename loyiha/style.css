@@ -1,5 +1,202 @@
-*{
+* {
     font-family: sans-serif;
+}
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sarlavha{
+    width: 40%;
+    gap: 43px;
+}
+.sarlavha>button {
+    display: flex;
+    align-items: center;
+    border: none;
+    width: Hug (224px)px;
+    height: Hug (56px)px;
+    padding: 16px 32px 16px 32px;
+    gap: 16px;
+    border-radius: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px 0px #00000012;
+
+    box-shadow: 0px 34px 75px 0px #00000012;
+
+    box-shadow: 0px 137px 137px 0px #0000000F;
+
+    box-shadow: 0px 308px 185px 0px #0000000A;
+
+    box-shadow: 0px 548px 219px 0px #00000003;
+
+    box-shadow: 0px 856px 240px 0px #00000000;
+
+}
+
+.sarlavha>h1 {
+    color: #000000;
+    font-size: 69px;
+    font-weight: 700;
+    line-height: 82.8px;
+    color: #000000;
+
+}
+
+.sarlavha>h1>span {
+    color: #F85E9F;
+}
+
+.sarlavha>p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    color: #19182580;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+}
+
+.btns>button:first-child {
+    width: Hug (141px)px;
+    height: Hug (49px)px;
+    padding: 16px 32px 16px 32px;
+    gap: 8px;
+    border-radius: 100px;
+    border: none;
+    background: #5D50C6;
+    box-shadow: 0px 0px 0px 0px #0000001A;
+
+    box-shadow: 0px 5px 11px 0px #0000001A;
+
+    box-shadow: 0px 20px 20px 0px #00000017;
+
+    box-shadow: 0px 45px 27px 0px #0000000D;
+
+    box-shadow: 0px 81px 32px 0px #00000003;
+
+    box-shadow: 0px 126px 35px 0px #00000000;
+    color: #EEEEEE;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+}
+
+.btns>button:last-child {
+    width: Hug (181px)px;
+    height: Hug (56px)px;
+    padding: 16px 32px 16px 32px;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    font-size: 14px;
+    font-weight: 700;
+    color: #222831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img {
+    position: relative;
+    width: 55%;
+}
+
+.img>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.img_2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 20px 20px;
+    z-index: 4;
+    margin: 0 auto;
+}
+
+.img_2-m {
+    max-width: max-content;
+    width: 300px;
+}
+@media (min-width: 400px) and (max-width: 500px) {
+    header{
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: none;
+        gap: 0px;
+    }
+    .img_2-m{
+        width: 150px;
+    }
+    .img_2-m img{
+        width: 139px;
+    }
+    .img_2 img{
+        width: 139px;
+    }
+    .img_2{
+        width: 80%;
+        padding: 20px 10px 10px 10px;
+    }
+    .img{
+        width: 100%;
+    }
+    .sarlavha{
+        text-align: center;
+        width: 100%;
+    }
+    .btns{
+        display: block;
+        width: 100%;
+    }
+    .btns > button{
+        width: 95%;
+    }
+    .sarlavha > button{
+        margin: 0 auto;
+    }
+}
+.deg{
+    margin-left: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.box{
+    width: 40px;
+    height: 40px;
+}
+.pen{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.father{
+    display: flex;
+    
+    align-items: center;
+    gap: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    
 }
 .section2{
     padding: 80px 30px;
