@@ -132,7 +132,7 @@ header {
     max-width: max-content;
     width: 300px;
 }
-@media (min-width: 400px) and (max-width: 500px) {
+@media (max-width: 500px) {
     header{
         flex-direction: column-reverse;
         display: flex;
@@ -188,15 +188,22 @@ header {
 }
 .father{
     display: flex;
-    
+    justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
-nav{
+.nav-main{
     display: flex;
     justify-content: space-between;
-    
+    width: 98%;
+    margin: 0 auto;
+}
+.nav-main > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 98%;
 }
 .section2{
     padding: 80px 30px;
@@ -209,8 +216,17 @@ nav{
 
 
 @media (max-width: 768px){
-    img{
+    .section2 > img{
         width: 160px;
     }
-    
+    .nav-main{
+        width: 98%;
+
+    }
+    .nav-main > div{
+        width: 98%;
+    }
+    .father > a{
+        display: none;
+    }
 }
