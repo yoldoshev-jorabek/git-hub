@@ -1,7 +1,6 @@
 * {
     font-family: sans-serif;
 }
-
 /* header */
 
 header {
@@ -170,4 +169,48 @@ header {
     .sarlavha > button{
         margin: 0 auto;
     }
+}
+.deg{
+    margin-left: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.box{
+    width: 40px;
+    height: 40px;
+}
+.pen{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.father{
+    display: flex;
+    
+    align-items: center;
+    gap: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.section2{
+    padding: 80px 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px){
+    img{
+        width: 160px;
+    }
+    
 }
