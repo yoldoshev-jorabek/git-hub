@@ -1,3 +1,32 @@
 *{
     font-family: sans-serif;
 }
+
+.deg{
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.box{
+    width: 40px;
+    height: 40px;
+}
+.pen{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.father{
+    display: flex;
+    
+    align-items: center;
+    gap: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
