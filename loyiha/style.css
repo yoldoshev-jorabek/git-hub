@@ -1,6 +1,7 @@
 *{
     font-family: sans-serif;
 }
+<<<<<<< HEAD
 
 .deg{
     margin-left: 10px;
@@ -30,3 +31,21 @@ nav{
     justify-content: space-between;
     
 }
+=======
+.section2{
+    padding: 80px 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px){
+    img{
+        width: 160px;
+    }
+    
+}
+>>>>>>> b0acc3bce556ac960fac7ba8033df8c50b8f3dbe
