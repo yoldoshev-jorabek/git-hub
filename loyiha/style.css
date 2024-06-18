@@ -1,6 +1,7 @@
 * {
     font-family: sans-serif;
 }
+
 /* header */
 
 header {
@@ -10,10 +11,11 @@ header {
     gap: 30px;
 }
 
-.sarlavha{
+.sarlavha {
     width: 40%;
     gap: 43px;
 }
+
 .sarlavha>button {
     display: flex;
     align-items: center;
@@ -132,80 +134,96 @@ header {
     max-width: max-content;
     width: 300px;
 }
-@media (max-width: 500px) {
-    header{
+
+@media (max-width: 768px) {
+    header {
         flex-direction: column-reverse;
         display: flex;
         justify-content: none;
         gap: 0px;
     }
-    .img_2-m{
+
+    .img_2-m {
         width: 150px;
     }
-    .img_2-m img{
+
+    .img_2-m img {
         width: 139px;
     }
-    .img_2 img{
+
+    .img_2 img {
         width: 139px;
     }
-    .img_2{
+
+    .img_2 {
         width: 80%;
         padding: 20px 10px 10px 10px;
     }
-    .img{
+
+    .img {
         width: 100%;
     }
-    .sarlavha{
+
+    .sarlavha {
         text-align: center;
         width: 100%;
     }
-    .btns{
+
+    .btns {
         display: block;
         width: 100%;
     }
-    .btns > button{
+
+    .btns>button {
         width: 95%;
     }
-    .sarlavha > button{
+
+    .sarlavha>button {
         margin: 0 auto;
     }
 }
-.deg{
+
+.deg {
     margin-left: 10px;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: space-between;
 }
-.box{
+
+.box {
     width: 40px;
     height: 40px;
 }
-.pen{
+
+.pen {
     font-size: 24px;
     font-weight: 600;
     line-height: 40px;
 }
-.father{
+
+.father {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
-.nav-main{
+.nav-main {
     display: flex;
     justify-content: space-between;
     width: 98%;
     margin: 0 auto;
 }
-.nav-main > div{
+
+.nav-main>div {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     width: 98%;
 }
-.section2{
+
+.section2 {
     padding: 80px 30px;
     margin: 0;
     display: flex;
@@ -215,36 +233,40 @@ header {
 }
 
 
-@media (max-width: 768px){
-    .section2 > img{
+@media (max-width: 768px) {
+    .section2>img {
         width: 160px;
     }
-    .nav-main{
+
+    .nav-main {
         width: 98%;
 
     }
-    .nav-main > div{
+
+    .nav-main>div {
         width: 98%;
     }
-    .father > a{
+
+    .father>a {
         display: none;
     }
 }
 
 
 
-.section4{
+.section4 {
     padding: 30px 50px;
 }
 
-.box1{
+.box1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* padding: 30px 50px; */
-    
+
 }
-.round1{
+
+.round1 {
     width: 85px;
     height: 85px;
     border-radius: 50%;
@@ -255,7 +277,8 @@ header {
     align-items: center;
     font-size: 25px;
 }
-.round2{
+
+.round2 {
     width: 85px;
     height: 85px;
     border-radius: 50%;
@@ -268,19 +291,102 @@ header {
     background-color: blueviolet;
     margin-left: 10px;
 }
-.text1{
+
+.text1 {
     font-size: 25px;
     text-transform: uppercase;
     color: #F85E9F;
 }
-.text2{
+
+.text2 {
     font-size: 20px;
 }
-.rounds{
+
+.rounds {
     display: flex;
 }
-.images{
+
+.images {
     display: flex;
     justify-content: space-between;
-    
+
+}
+
+.aside-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sarlavha2>h4 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 27.6px;
+    color: #F85E9F;
+    text-transform: uppercase;
+}
+
+.sarlavha2>h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 52.8px;
+    color: #191825;
+}
+
+.sarlavha2>p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    color: #19182580;
+}
+
+.sarlavha2>.frame-max>.frame-min {
+    display: flex;
+    gap: 32px;
+}
+
+.frame-min>.frame {
+    width: 204.5px;
+    height: 151px;
+    padding: 32px;
+    gap: 16px;
+    border-radius: 32px;
+    border: 2px solid #1918251A;
+    margin-top: 32px;
+}
+
+.frame>h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #FF5722;
+    text-align: center;
+}
+
+.frame>p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #191825;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .aside-1{
+        width: 100%;
+        display: block;
+    }
+    .aside-1 > .image{
+        width: 100%;
+    }
+    .image > img{
+        width: 100%;
+    }
+    .sarlavha2{
+        text-align: center;
+    }
+    .sarlavha2>.frame-max>.frame-min{
+        display: block;
+        width: 100%;
+    }
+    .frame-min>.frame{
+        width: 100%;
+    }
 }
