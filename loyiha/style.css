@@ -2,7 +2,7 @@
     font-family: sans-serif;
 }
 
-/* header */
+
 
 header {
     display: flex;
@@ -172,6 +172,7 @@ header {
     .btns {
         display: block;
         width: 100%;
+        text-align: center;
     }
 
     .btns>button {
@@ -253,13 +254,6 @@ header {
 }
 
 
-
-
-
-
-
-
-
 .section4 {
     padding: 30px 50px;
 }
@@ -268,7 +262,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 30px 50px; */
+    padding: 30px 0px;
 
 }
 
@@ -299,13 +293,15 @@ header {
 }
 
 .text1 {
-    font-size: 25px;
+    font-size: 23px;
+    font-weight: 700;
     text-transform: uppercase;
     color: #F85E9F;
 }
 
 .text2 {
-    font-size: 20px;
+    font-size: 44px;
+    font-weight: 700;
 }
 
 .rounds {
@@ -315,17 +311,59 @@ header {
 .images {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+}
 
+.images>div {
+    margin: 0 auto;
+}
+
+.images>div>img {
+    width: 100%;
+}
+
+.div-in {
+    width: 100%;
+    padding: 20px;
+}
+
+.div-in2 {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    gap: 90px;
 }
 
 
+@media (max-width: 768px) {
+    .images {
+        display: block;
+    }
 
+    .box1 {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
 
+    .rounds {
+        justify-content: space-between;
+    }
 
+    .div-in2 {
+        flex-direction: column-reverse;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
 
+    .div-in2>span {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
 
-
-
+}
 
 
 .aside-1 {
@@ -364,7 +402,7 @@ header {
 .frame-min>.frame {
     width: 204.5px;
     height: 151px;
-    padding: 32px;
+    /* padding: 32px; */
     gap: 16px;
     border-radius: 32px;
     border: 2px solid #1918251A;
@@ -384,25 +422,292 @@ header {
     color: #191825;
     text-align: center;
 }
+
 @media (max-width: 768px) {
-    .aside-1{
+    .aside-1 {
         width: 100%;
         display: block;
     }
-    .aside-1 > .image{
+
+    .aside-1>.image {
         width: 100%;
     }
-    .image > img{
+
+    .image>img {
         width: 100%;
     }
-    .sarlavha2{
+
+    .sarlavha2 {
         text-align: center;
     }
-    .sarlavha2>.frame-max>.frame-min{
+
+    .sarlavha2>.frame-max>.frame-min {
         display: block;
         width: 100%;
     }
-    .frame-min>.frame{
+
+    .frame-min>.frame {
         width: 100%;
     }
+}
+
+
+
+.price {
+    font-size: 23px;
+    font-weight: 700;
+    /* margin-right: 20px; */
+    color: #F85E9F;
+}
+
+.about {
+    font-size: 23px;
+    font-weight: 700;
+    color: #191825;
+}
+
+.location {
+    font-weight: 400;
+    font-size: 18px;
+    color: #191825BF;
+    opacity: 0.6;
+}
+
+.text-bold {
+
+    margin-left: 7px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #191825;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+
+}
+
+.text-gray {
+    font-weight: 450;
+    font-size: 23px;
+    color: #19182580;
+    opacity: 0.6;
+}
+
+.links div {
+    background-color: #5D50C6;
+    color: #fff;
+    width: 25px;
+    height: 28px;
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.links {
+    display: flex;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 15px;
+}
+
+footer>div {
+    position: relative;
+}
+
+.bold-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bold-c>img {
+    display: none;
+}
+
+footer>div>input {
+    position: absolute;
+    top: 28px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+input:checked~.gray-c {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    footer {
+        display: block;
+    }
+
+    .gray-c {
+        display: none;
+    }
+
+    .bold-c>img {
+        display: block;
+    }
+}
+
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sarlavha-s {
+    width: 400px;
+    height: 250px;
+    gap: 16px;
+
+}
+
+.sarlavha-s>h4 {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #F85E9F;
+}
+
+.sarlavha-s>h2 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 52.8px;
+    color: #191825;
+}
+
+.card-c {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card-c>div {
+    width: 210px;
+    height: 260px;
+    padding: 64px;
+    gap: 64px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.card-1 {
+    border: 1px solid #1918251A;
+}
+
+.card-2 {
+    box-shadow: 0px 0px 0px 0px #0000001A;
+    box-shadow: 0px 41px 89px 0px #0000001A;
+}
+
+.card-3 {
+    border: 1px solid #1918251A;
+}
+
+.card-c>div>h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #191825;
+}
+
+.card-c>div>p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    color: #19182580;
+}
+
+@media (max-width: 768px) {
+    .section-1 {
+        display: block;
+    }
+
+    .sarlavha-s {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-c {
+        display: block;
+        width: 100%;
+    }
+
+    .card-c>div {
+        width: 100%;
+        padding: 64px 0px;
+        margin-top: 30px;
+    }
+}
+
+
+.aside-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px;
+}
+
+.aside-min_s>h4 {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #F85E9F;
+}
+
+.aside-min_s>h2 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #191825;
+}
+
+.aside-min_s>p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    color: #19182580;
+}
+
+.aside-card {
+    width: Fill (549px)px;
+    height: Hug (164px)px;
+    padding: 32px;
+    gap: 32px;
+    border-radius: 32px;
+    display: flex;
+    border: 1px solid #FFFFFF;
+    transition: .5s;
+}
+
+.aside-card:hover {
+    border: 1px solid #1918251A
+}
+
+.aside-card>h5 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #191825;
+}
+
+.aside-card>p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #19182580;
+}
+.aside-sarlavha{
+    width: 549px;
 }
